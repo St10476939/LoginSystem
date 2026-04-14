@@ -14,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Registration {
     
     public Registration() {
+        
     }
     
 }

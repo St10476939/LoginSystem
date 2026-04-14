@@ -13,7 +13,34 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class Password {
     
-    public Password() {
+    // Create an instance of the class that contains the logic
+    Password user = new Password();
+
+    @Test
+    public void testPasswordComplexitySuccess() {
+        // Test Data: "Ch&&sec@ke99!"
+        user.setPassword("Ch&&sec@ke99!");
+        assertTrue(user.checkPasswordComplexity(), "Password should meet complexity requirements.");
+    }
+
+    @Test
+    public void testPasswordComplexityFailure() {
+        // Test Data: "password"
+        user.setPassword("password");
+        assertFalse(user.checkPasswordComplexity(), "Password should fail complexity requirements.");
     }
     
+    @Test
+    public void testUsernameSuccess() {
+        // Test Data: "kyl_1"
+        user.setUsername("kyl_1");
+        assertTrue(user.checkUserName());
+    }
+    
+    @Test
+    public void testUsernameFailure() {
+        // Test Data: "kyle!!!!!!!"
+        user.setUsername("kyle!!!!!!!");
+        assertFalse(user.checkUserName());
+    }
 }

@@ -4,6 +4,7 @@
  */
 package com.mycompany.loginsystem;
 
+import com.mycompany.mainSystem;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,33 +14,50 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class Login {
    
-    Login user = new Login();
+   // Create an instance of the logic class, not the test class
+    mainSystem user = new mainSystem();
 
     @Test
     public void testLoginSuccess() {
-        user.registerUser("kyl_1", "Ch&&sec@ke99!", "+27838968976", "Kyle", "Smith");
+        // Prepare the user data
+        user.setUsername("kyl_1");
+        user.setPassword("Ch&&sec@ke99!");
+        
+        // Test if login returns true for matching credentials
         assertTrue(user.loginUser("kyl_1", "Ch&&sec@ke99!"));
     }
 
     @Test
     public void testLoginFail() {
-        user.registerUser("kyl_1", "Ch&&sec@ke99!", "+27838968976", "Kyle", "Smith");
+        // Prepare the user data
+        user.setUsername("kyl_1");
+        user.setPassword("Ch&&sec@ke99!");
+        
+        // Test if login returns false for incorrect password
         assertFalse(user.loginUser("kyl_1", "wrongPassword"));
     }
 
     @Test
     public void testLoginMessageSuccess() {
-        user.registerUser("kyl_1", "Ch&&sec@ke99!", "+27838968976", "Kyle", "Smith");
-        String message = user.returnLoginStatus(true);
-        assertEquals("Welcome Kyle, Smith it is great to see you again.", message);
+        // Prepare names for the welcome message
+        user.setFirstName("Kyle");
+        user.setLastName("Smith");
+        
+        // Test the message when login is successful (true)
+        String expected = "Welcome Kyle, Smith it is great to see you again.";
+        String actual = user.returnLoginStatus(true);
+        
+        assertEquals(expected, actual);
     }
 
     @Test
     public void testLoginMessageFail() {
-        String message = user.returnLoginStatus(false);
-        assertEquals("Username or password incorrect, please try again.", message);
+        // Test the message when login fails (false)
+        String expected = "Username or password incorrect, please try again.";
+        String actual = user.returnLoginStatus(false);
+        
+        assertEquals(expected, actual);
     }
-}
-    
+}    
     
 

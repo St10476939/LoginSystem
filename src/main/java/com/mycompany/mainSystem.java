@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class mainSystem { 
     
-     private String username;
+    private String username;
     private String password;
     private String cellPhoneNumber;
     private String firstName;
@@ -28,9 +28,6 @@ public class mainSystem {
         this.password = password;
         this.cellPhoneNumber = cellPhoneNumber;
     }
-
-    // Default constructor
-    public mainSystem ()()
 
     // Username validation
     public boolean checkUserName() {
@@ -89,7 +86,7 @@ public class mainSystem {
         Scanner input = new Scanner(System.in);
         mainSystem user = new mainSystem();
 
-        System.out.println("=== REGISTER ===");
+        System.out.println("REGISTER");
 
         System.out.print("First Name: ");
         user.setFirstName(input.nextLine());
@@ -111,7 +108,7 @@ public class mainSystem {
 
         if (result.equals("Registration successful!")) {
 
-            System.out.println("\n=== LOGIN ===");
+            System.out.println("LOGIN");
 
             System.out.print("Username: ");
             String u = input.nextLine();

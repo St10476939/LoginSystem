@@ -59,17 +59,17 @@ public class LoginSystem {
         }
  
         String registrationResult = user.registerUser();
-        System.out.println("\nRegistration result: " + registrationResult);
+        System.out.println("Registration result: " + registrationResult);
  
         // Only attempt login if registration succeeded
         if (!user.checkUserName() || !user.checkPasswordComplexity() || !user.checkCellPhoneNumber()) {
-            System.out.println("\nRegistration failed. Please fix the errors above and try again.");
+            System.out.println("Registration failed. Please fix the errors above and try again.");
             scanner.close();
             return;
         }
  
         //  Login 
-        System.out.println("\n--- Login ---");
+        System.out.println("Login");
  
         System.out.print("Enter username: ");
         String loginUsername = scanner.nextLine().trim();
