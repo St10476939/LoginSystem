@@ -1,7 +1,7 @@
 # LoginSystem
 
 # Overview 
-## This project is a login and registration system built using Java. I developed it using object-oriented programming principles. The system does the following:
+This project is a login and registration system built using Java. I developed it using object-oriented programming principles. The system does the following:
 Allows users to register an account
 Checks their details like username, password and phone number
  Lets users log in using their stored credentials
@@ -24,7 +24,6 @@ Checks their details like username, password and phone number
 The application has four classes:
 
 # 1. User.java
-
 ## This class stores user information like:
 
 * Username
@@ -40,7 +39,6 @@ The application has four classes:
 It uses methods to access data.
 
 # 2. Registration.java
-
 ## This class handles:
 
 * Checking if usernames are valid
@@ -76,16 +74,14 @@ The rules for validation are:
 * Must be followed by 9 digits
 
 # 3. Login.java
-
-This class handles:
+## This class handles:
 
 * Checking if users are who they say they are
 
 * Showing login status messages
 
 # 4. Main.java
-
-This class runs the program.
+## This class runs the program.
 
 * Gets input from users
 
