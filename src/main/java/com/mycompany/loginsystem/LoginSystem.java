@@ -2,6 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 package com.mycompany.loginsystem;
+
+import com.mycompany.loginsystem.UserSystem.User;
+
 /**
  *
  * @author lab_services_student
@@ -9,7 +12,7 @@ package com.mycompany.loginsystem;
 public class LoginSystem {
     
     private LoginSystem user;
-  private User user;
+    private User user;
 
     public LoginSystem(User user) {
         this.user = user;
