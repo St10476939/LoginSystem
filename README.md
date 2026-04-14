@@ -19,13 +19,13 @@ Checks their details like username, password and phone number
 
 * Apply object-oriented concepts like encapsulation
 
-System Structure
+# System Structure
 
 The application has four classes:
 
-1. User.java
+# 1. User.java
 
-This class stores user information like:
+## This class stores user information like:
 
 * Username
 
@@ -39,9 +39,9 @@ This class stores user information like:
 
 It uses methods to access data.
 
-2. Registration.java
+# 2. Registration.java
 
-This class handles:
+## This class handles:
 
 * Checking if usernames are valid
 
@@ -75,7 +75,7 @@ The rules for validation are:
 
 * Must be followed by 9 digits
 
-3. Login.java
+# 3. Login.java
 
 This class handles:
 
@@ -83,7 +83,7 @@ This class handles:
 
 * Showing login status messages
 
-4. Main.java
+# 4. Main.java
 
 This class runs the program.
 
