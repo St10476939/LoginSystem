@@ -31,7 +31,7 @@ public class MainSystem {
         System.out.println(registerMessage);
 
         if (registerMessage.equals("Registration successful!")) {
-            MainSystem user = new User(firstName, lastName, username, password, phone);
+            MainSystem user = new user(firstName, lastName, username, password, phone);
             LoginSystem loginSystem = new LoginSystem(user);
 
             System.out.println("\nLogin");

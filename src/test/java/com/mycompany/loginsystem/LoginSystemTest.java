@@ -1,5 +1,7 @@
 package com.mycompany.loginsystem;
 
+
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -10,15 +12,15 @@ public class LoginSystemTest {
 
     @BeforeEach
     void setUp() {
-        User user = new User("John", "Doe", "jo_ny", "Password1!", "+27821234567");
+        LoginSystem user = new User("John", "Doe", "jo_ny", "Password1!", "+27821234567");
         loginSystem = new LoginSystem(user);
     }
 
-    // --- loginUser ---
+    //loginUser
 
     @Test
     void testLoginUser_CorrectCredentials() {
-        assertTrue(loginSystem.loginUser("jo_ny", "Password1!"));
+        assertTrue(loginSystem.loginUser("jony", "Password1!"));
     }
 
     @Test
@@ -41,7 +43,7 @@ public class LoginSystemTest {
         assertFalse(loginSystem.loginUser("", ""));
     }
 
-    // --- returnLoginStatus ---
+    //returnLoginStatus
 
     @Test
     void testReturnLoginStatus_True() {
