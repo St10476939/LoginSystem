@@ -8,15 +8,15 @@ import java.util.Scanner;
  * Main application class for the Registration and Login system.
  * Demonstrates user registration and login functionality.
  */
-public class Login {
+public class LoginSystem {
  
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
  
-        System.out.println("=== User Registration & Login System ===\n");
+        System.out.println("User Registration & Login System");
  
-        // ── Registration ──────────────────────────────────
-        System.out.println("--- Registration ---");
+        //  Registration 
+        System.out.println("Registration");
  
         System.out.print("Enter first name: ");
         String firstName = scanner.nextLine().trim();
@@ -38,23 +38,23 @@ public class Login {
  
         // Individual field feedback
         if (user.checkUserName()) {
-            System.out.println("✔ Username successfully captured.");
+            System.out.println(" Username successfully captured.");
         } else {
-            System.out.println("✘ Username is not correctly formatted; please ensure that your username " +
+            System.out.println(" Username is not correctly formatted; please ensure that your username " +
                     "contains an underscore and is no more than five characters in length.");
         }
  
         if (user.checkPasswordComplexity()) {
-            System.out.println("✔ Password successfully captured.");
+            System.out.println(" Password successfully captured.");
         } else {
-            System.out.println("✘ Password is not correctly formatted; please ensure that the password " +
+            System.out.println("Password is not correctly formatted; please ensure that the password " +
                     "contains at least eight characters, a capital letter, a number, and a special character.");
         }
  
         if (user.checkCellPhoneNumber()) {
-            System.out.println("✔ Cell phone number successfully added.");
+            System.out.println("Cell phone number successfully added.");
         } else {
-            System.out.println("✘ Cell number is incorrectly formatted or does not contain an international code; " +
+            System.out.println("Cell number is incorrectly formatted or does not contain an international code; " +
                     "please correct the number and try again.");
         }
  
@@ -68,7 +68,7 @@ public class Login {
             return;
         }
  
-        // ── Login ─────────────────────────────────────────
+        //  Login 
         System.out.println("\n--- Login ---");
  
         System.out.print("Enter username: ");

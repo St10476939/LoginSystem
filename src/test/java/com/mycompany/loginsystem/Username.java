@@ -25,9 +25,7 @@ public class Username {
         user = new User("John", "Doe", "kyl_1", "Ch&&sec@ke99!", "+27838968976");
     }
  
-    // ─────────────────────────────────────────────────────────────
     // Username Tests
-    // ─────────────────────────────────────────────────────────────
  
     /**
      * Test: Username is correctly formatted.
@@ -51,9 +49,7 @@ public class Username {
                 "Expected false for invalid username 'kyle!!!!!!!'");
     }
  
-    // ─────────────────────────────────────────────────────────────
     // Password Tests
-    // ─────────────────────────────────────────────────────────────
  
     /**
      * Test: Password meets complexity requirements.
@@ -77,9 +73,7 @@ public class Username {
                 "Expected false for invalid password 'password'");
     }
  
-    // ─────────────────────────────────────────────────────────────
     // Cell Phone Number Tests
-    // ─────────────────────────────────────────────────────────────
  
     /**
      * Test: Cell phone number is correctly formatted.
@@ -103,9 +97,7 @@ public class Username {
                 "Expected false for invalid cell number '08966553'");
     }
  
-    // ─────────────────────────────────────────────────────────────
     // Registration Message Tests (assertEquals)
-    // ─────────────────────────────────────────────────────────────
  
     /**
      * Test: registerUser() returns correct message for invalid username.
@@ -148,9 +140,7 @@ public class Username {
         );
     }
  
-    // ─────────────────────────────────────────────────────────────
     // Login Tests
-    // ─────────────────────────────────────────────────────────────
  
     /**
      * Test: Login succeeds with correct credentials → expected: true
@@ -170,9 +160,7 @@ public class Username {
                 "Expected false for incorrect login credentials");
     }
  
-    // ─────────────────────────────────────────────────────────────
     // Return Login Status Message Tests (assertEquals)
-    // ─────────────────────────────────────────────────────────────
  
     /**
      * Test: returnLoginStatus() returns welcome message on successful login.
