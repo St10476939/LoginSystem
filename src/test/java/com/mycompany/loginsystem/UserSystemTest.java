@@ -11,68 +11,99 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ *
+ * @author lab_services_student
+ */
 public class UserSystemTest {
-
-    private User instance;
-
+    
     public UserSystemTest() {
     }
-
+    
     @BeforeAll
     public static void setUpClass() {
     }
-
+    
     @AfterAll
     public static void tearDownClass() {
     }
-
+    
     @BeforeEach
     public void setUp() {
-        // Create a real User instance before each test
-        instance = new User("jo_n", "Password1!", "+27821234567", "John", "Doe");
     }
-
+    
     @AfterEach
     public void tearDown() {
     }
 
+    /**
+     * Test of getUsername method, of class UserSystem.
+     */
     @Test
     public void testGetUsername() {
         System.out.println("getUsername");
-        String expResult = "jo_n";
+        UserSystem instance = null;
+        String expResult = "";
         String result = instance.getUsername();
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
+    /**
+     * Test of getPassword method, of class UserSystem.
+     */
     @Test
     public void testGetPassword() {
         System.out.println("getPassword");
-        String expResult = "Password1!";
+        UserSystem instance = null;
+        String expResult = "";
         String result = instance.getPassword();
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
+    /**
+     * Test of getCellphone method, of class UserSystem.
+     */
     @Test
     public void testGetCellphone() {
         System.out.println("getCellphone");
-        String expResult = "+27821234567";
+        UserSystem instance = null;
+        String expResult = "";
         String result = instance.getCellphone();
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
+    /**
+     * Test of getFirstName method, of class UserSystem.
+     */
     @Test
     public void testGetFirstName() {
         System.out.println("getFirstName");
-        String expResult = "John";
+        UserSystem instance = null;
+        String expResult = "";
         String result = instance.getFirstName();
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
 
+    /**
+     * Test of getLastName method, of class UserSystem.
+     */
     @Test
     public void testGetLastName() {
         System.out.println("getLastName");
-        String expResult = "Doe";
+        UserSystem instance = null;
+        String expResult = "";
         String result = instance.getLastName();
         assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
     }
+    
 }
